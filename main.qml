@@ -2,8 +2,8 @@ import QtQuick 2.0
 import QtGraphicalEffects 1.0
 
 Item {
-    width: 550
-    height: 150
+    width: 550 * scaleFactor
+    height: 150 * scaleFactor
 
     Item {
         anchors.fill: parent
