@@ -11,9 +11,6 @@ public:
     TimeWindow(QWidget *parent = 0);
     ~TimeWindow();
 
-private:
-    void alignWindow(const QSize &newSize);
-
 };
 
 #endif // TIMEWINDOW_H

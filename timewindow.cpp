@@ -14,11 +14,13 @@ TimeWindow::TimeWindow(QWidget *parent)
     setAttribute(Qt::WA_TranslucentBackground);
     setClearColor(Qt::transparent);
 
-    engine()->rootContext()->setContextProperty("timeWindow", this);
-    engine()->rootContext()->setContextProperty("scaleFactor", qApp->screens()[0]->logicalDotsPerInch() / 96.0);
-
     setSource(QUrl("qrc:/main.qml"));
-    alignWindow(size());
+
+    setGeometry(QStyle::alignedRect(
+                    Qt::RightToLeft,
+                    Qt::AlignTop,
+                    size(),
+                    qApp->desktop()->availableGeometry()));
 }
 
 TimeWindow::~TimeWindow()
@@ -26,11 +28,3 @@ TimeWindow::~TimeWindow()
 
 }
 
-void TimeWindow::alignWindow(const QSize &newSize)
-{
-    setGeometry(QStyle::alignedRect(
-                    Qt::RightToLeft,
-                    Qt::AlignTop,
-                    newSize,
-                    qApp->desktop()->availableGeometry()));
-}
