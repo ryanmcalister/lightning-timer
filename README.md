@@ -9,5 +9,5 @@ This application demonstrates how to handle high dpi display settings for a Qt Q
 * Run the project
 
 # Reference
-[http://doc.qt.io/qt-5/highdpi.html]: http://doc.qt.io/qt-5/highdpi.html
-[http://doc.qt.io/qt-5/qt-conf.html]: http://doc.qt.io/qt-5/qt-conf.html
+[http://doc.qt.io/qt-5/highdpi.html](http://doc.qt.io/qt-5/highdpi.html)
+[http://doc.qt.io/qt-5/qt-conf.html](http://doc.qt.io/qt-5/qt-conf.html)
