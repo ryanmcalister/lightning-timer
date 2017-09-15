@@ -30,3 +30,5 @@ HEADERS += \
 
 RESOURCES += \
     resources.qrc
+
+win32:RC_FILE = application.rc
