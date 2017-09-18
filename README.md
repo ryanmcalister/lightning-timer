@@ -2,7 +2,13 @@
 A screen timer display for lightning talks. 
 
 # The Application
-This application demonstrates how to handle high dpi display settings for a Qt Quick UI. It displays a clock timer in a QQuickWidget window that is transparent and non-interactive. The main QML file defines a simple timer display. The application scales it's window size based on the logical dpi setting of the screen to make it 'Screen-DPI Aware'. Alternatively, the qt.conf file can be placed in the running directory to declare the application 'DPI Unaware' so MS Windows will scale the application appropriately.
+This application demonstrates how to handle high dpi display settings for a Qt Quick UI. It displays a clock timer in a QQuickWidget window that is transparent and non-interactive. The main QML file defines a simple timer display. 
+
+# Achieving Level-2 Awareness
+The application scales it's window size based on the logical dpi setting of the screen to make it 'Screen-DPI Aware'. Please note, it will take additional code logic to detect when the screen or dpi changes but that is left as a user exercise.
+
+# Alternative
+For an acceptable and easy solution without adding code for dpi awareness, you can simply place the provided qt.conf file in the running directory. This will tell MS Windows that the application is 'DPI Unaware' and it will scale the application appropriately.
 
 # To Use
 * Open LightningTimer.pro in Qt Creator
